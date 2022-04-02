@@ -8,11 +8,11 @@ public class Main {
     Box d = new Box(12,22,48);
     Box f = new Box(9,37,11);
 
-        System.out.println("Box 'a' volume: " + a.getSum());
-        System.out.println("Box 'b' volume: " + b.getSum());
-        System.out.println("Box 'c' volume: " + c.getSum());
-        System.out.println("Box 'd' volume: " + d.getSum());
-        System.out.println("Box 'f' volume: " + f.getSum());
+        System.out.println("Box 'a' volume: " + a.getValue());
+        System.out.println("Box 'b' volume: " + b.getValue());
+        System.out.println("Box 'c' volume: " + c.getValue());
+        System.out.println("Box 'd' volume: " + d.getValue());
+        System.out.println("Box 'f' volume: " + f.getValue());
 
     }
 }

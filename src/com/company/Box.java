@@ -11,7 +11,7 @@ public class Box {
         this.length = length;
     }
 
-   int getSum() {
+   int getValue() {
         return width * height * length;
    }
 
