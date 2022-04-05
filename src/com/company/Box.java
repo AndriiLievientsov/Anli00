@@ -40,7 +40,7 @@ public class Box {
     }
 
     public void setMaterial(String material) {
-        this.material = material;
+            this.material = material;
     }
 
     public void setColor(String color) {
@@ -67,8 +67,8 @@ public class Box {
         return color;
     }
 
-    int getValue() {
+     int getValue() {
         return width * height * length;
-   }
+        }
 
 }
