@@ -71,4 +71,14 @@ public class Box {
         return width * height * length;
         }
 
+       String getBoxA () {
+           return "BOX 'a':" + "\n"
+                + "Volume - " + getValue() + "\n"
+                + "Material - " + getMaterial() + "\n"
+                + "Color - " + getColor() + "\n";
+       }
+
+       String getBoxB() {
+            return "BOX 'b':" + "\n" + "Volume - " + getValue();
+       }
 }

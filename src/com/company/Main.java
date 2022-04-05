@@ -11,16 +11,10 @@ public class Main {
     a.setMaterial("Plastic");
 
     b.setWidth(99);
-    b.setHeight(3);
+    b.setHeight(5);
     b.setLength(14);
 
-    System.out.println("BOX 'a':" + "\n"
-            + "Volume - " + a.getValue() + "\n"
-            + "Material - " + a.getMaterial() + "\n"
-            + "Color - " + a.getColor());
-
-    System.out.println();
-
-    System.out.println("BOX 'b':" + "\n" + "Volume - " + b.getValue());
+    System.out.println(a.getBoxA());
+    System.out.println(b.getBoxB());
     }
 }
