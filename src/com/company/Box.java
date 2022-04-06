@@ -6,7 +6,7 @@ public class Box {
     private int length;
     private String material;
     private String color;
-    //а
+
 
     public Box(int width, int height, int length) {
         this.width = width;
