@@ -1,11 +1,11 @@
 package com.company;
 
 public class Box {
-    int width;
-    int height;
-    int length;
-    String material;
-    String color;
+    private int width;
+    private int height;
+    private int length;
+    private String material;
+    private String color;
 
     public Box(int width, int height, int length) {
         this.width = width;
