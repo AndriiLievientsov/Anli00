@@ -1,7 +1,7 @@
 package com.company;
 
 public class ColorBox extends Box {
-    private Color color;
+    protected Color color;
 
     public ColorBox(int width, int height, int length, Material material, Color color)  {
         super(width, height, length, material);
