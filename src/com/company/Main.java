@@ -2,15 +2,15 @@ package com.company;
 
 public class Main {
     public static void main(String[] args) {
-        Box a = new Box(25,17,44,Material.WOOD);
-        ColorBox b = new ColorBox(1,738,141,Material.METAL,null);
-        Warehouse warehouse = new Warehouse();
-//        Object[] array = new Object[];
+        Warehouse warehouse = new Warehouse(5);
+        Object[] array = new Object[warehouse.capacity];
+        Box[] boxes = {new Box(10,44,195,Material.METAL)};
 
+        for (int i = 0; i < array.length ; i++) {
+            warehouse.addBox(boxes);
+        }
 
-
-        System.out.println("Ящик мой - a : " + a);
-        System.out.println("Ящик мой - b : " + b);
+        System.out.println("Мой склад " + warehouse);
 
     }
 }
