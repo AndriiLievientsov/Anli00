@@ -15,17 +15,5 @@ public enum Color {
     public  String getColors () {
         return color;
     }
-    public  static  Color getColorName (int i) {
-        switch (i) {
-            case 1: return Color.RED;
-            case 2: return Color.GREEN;
-            case 3: return Color.BLACK;
-        }
-        return Color.WHITE;
-    }
-
-    String getColorC() {
-        return "\n" +"Color - " + getColors();
-    }
 
 }
