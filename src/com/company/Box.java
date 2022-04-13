@@ -8,13 +8,18 @@ public class Box  {
 
 
     public Box(int width, int height, int length, Material material) {
-        if ( width <= 0 || height <= 0 || length <=0) {
-            throw new IllegalArgumentException(" Ошибка в данныйх");
-        }
-        this.width = width;
-        this.height = height;
-        this.length = length;
-        this.material = material;
+       try {
+           if ( width <= 0 || height <= 0 || length <=0 || material == null) {
+               throw new IllegalArgumentException("Ошибка в данных ввода");
+           }
+           this.width = width;
+           this.height = height;
+           this.length = length;
+           this.material = material;
+       } catch (IllegalArgumentException e) {
+           System.out.println(e.getMessage());
+       }
+
     }
 
     @Override

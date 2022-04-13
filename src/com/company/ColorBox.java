@@ -5,10 +5,14 @@ public class ColorBox extends Box {
 
     public ColorBox(int width, int height, int length, Material material, Color color)  {
         super(width, height, length, material);
-        if (color == null) {
-            throw new IllegalArgumentException("Ошибка цвета");
+        try {
+            if (color == null ) {
+                throw new IllegalArgumentException("Ошибка цвета");
+            }
+            this.color = color;
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
         }
-        this.color = color;
     }
 
     @Override
