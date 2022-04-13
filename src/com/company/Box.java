@@ -10,7 +10,7 @@ public class Box  {
     public Box(int width, int height, int length, Material material) {
        try {
            if ( width <= 0 || height <= 0 || length <=0 || material == null) {
-               throw new IllegalArgumentException("Ошибка в данных ввода");
+               throw new IllegalArgumentException("Error in input data");
            }
            this.width = width;
            this.height = height;

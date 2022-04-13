@@ -7,7 +7,7 @@ public class ColorBox extends Box {
         super(width, height, length, material);
         try {
             if (color == null ) {
-                throw new IllegalArgumentException("Ошибка цвета");
+                throw new IllegalArgumentException("Color error");
             }
             this.color = color;
         } catch (IllegalArgumentException e) {

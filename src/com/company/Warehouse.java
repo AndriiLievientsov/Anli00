@@ -9,7 +9,7 @@ public class Warehouse {
     public Warehouse(int capacity) {
         try {
             if (capacity <= 0){
-                throw new IllegalArgumentException("Обишка ввода данных capacity");
+                throw new IllegalArgumentException("Data entry error capacity");
             }
             this.capacity = capacity;
             boxes = new Box[capacity];
@@ -24,12 +24,21 @@ public class Warehouse {
 
     @Override
     public String toString() {
-        return "\n" + "Warehouse {" +
-                "boxes=" + Arrays.toString(boxes) +
-                '}';
+        return "\n"  +
+                 Arrays.toString(boxes)
+               ;
     }
 
-    public void addBox (Box[] boxes) {
-        this.boxes = boxes;
+    public void addBox (Box box, int position) {
+      try {
+          if (0 > position && position >= capacity ){
+              throw new ArrayIndexOutOfBoundsException();
+          }
+          boxes[position] = box;
+      }catch(ArrayIndexOutOfBoundsException ea) {
+          System.out.println("The index you have entered is invalid");
+          System.out.println("Please enter an index number between 0 and 4");
+      }
+
     }
 }
