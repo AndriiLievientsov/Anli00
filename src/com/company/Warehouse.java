@@ -37,7 +37,7 @@ public class Warehouse {
           boxes[position] = box;
       }catch(ArrayIndexOutOfBoundsException ea) {
           System.out.println("The index you have entered is invalid");
-          System.out.println("Please enter an index number between 0 and 4");
+          System.out.println("Please enter an index number between 0 and 3" + "\n");
       }
 
     }
