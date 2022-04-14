@@ -14,7 +14,6 @@ public class Main {
         warehouse.addBox(box3, 2);
         warehouse.addBox(box4, 15);
 
-
         System.out.println("Warehouse " + warehouse);
 
     }
